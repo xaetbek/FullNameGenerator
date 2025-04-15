@@ -38,13 +38,13 @@ public class FullNameApplication {
         fullName.append(capitalize(firstName)).append(" ");
 
         if (!middleName.isEmpty()) {
-            fullName.append(capitalize(middleName)).append(" ");
+            fullName.append(capitalize(middleName)).append(". ");
         }
 
         fullName.append(capitalize(lastName));
 
         if (!suffix.isEmpty()) {
-            fullName.append(", ").append(suffix);
+            fullName.append(", ").append(capitalize(suffix)).append(".");
         }
 
         System.out.println("Full name: " + fullName);
